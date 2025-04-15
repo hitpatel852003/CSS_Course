@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations </title>
+    <style>
+        .continer{
+            width: 70vw;
+            height: 70vh;
+            background-color: aqua;
+            padding: 30px;
+        }
+
+        .box{
+            width: 5vw;
+            height: 5vh;
+            background-color: brown;
+            /* animation: hit;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;     */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: hit 1s ease-in-out 1s infinite alternate backwards,
+                       hit2 1s ease-in-out 1s infinite alternate backwards;                                                
+            
+        }
+
+        @keyframes hit {
+            from{
+                background-color: chartreuse;
+                color: chocolate;
+            }
+            to{
+                transform: translateY(5vw) translatex(5vh) scale(2);
+                background-color: chocolate;
+                color: chartreuse;
+            }  
+        }
+
+        @keyframes hit2 {
+            0%{
+                background-color: burlywood;
+                color: darkblue;
+                scale: 1;
+            }
+            10%{
+                background-color: darkkhaki;
+                color: darkmagenta;
+                scale: 2;
+                transform: rotate(100deg);
+            }
+            20%{
+                background-color: darkslategray;
+                color: darkviolet;
+                scale: 3;
+                transform: rotate(200deg);
+            }
+            30%{
+                background-color: ivory;
+                color: limegreen;
+                scale: 4;
+                transform: rotate(300deg);
+            }
+            40%{
+                background-color: seagreen;
+                color: yellowgreen;
+                scale: 5;
+                transform: rotate(400deg);
+            }
+            50%{
+                background-color: antiquewhite;
+                color: red;
+                scale: 6;
+                transform: rotate(500deg);
+            }
+            60%{
+                background-color: ghostwhite;
+                color: darkgreen;
+                scale: 7;
+                transform: rotate(600deg);
+            }
+            70%{
+                background-color: crimson;
+                color: darkslateblue;
+                scale: 8;
+                transform: rotate(700deg);
+            }
+            80%{
+                background-color: darkorange;
+                color: grey;
+                scale: 9;
+                transform: rotate(800deg);
+            }
+            90%{
+                background-color: indianred;
+                color: indianred;
+                scale: 10;
+                transform: rotate(900deg);
+            }
+            100%{
+                background-color: lightpink;
+                color: blue;
+                scale: 11;
+                transform: rotate(1000deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html{
+            font-size: 10px;
+        }
+
+        .box{
+            border: 2px solid blue;
+            width: 50vw;
+            height: 50vh;
+            box-sizing: border-box;
+            margin: auto;
+            text-align: center;
+            color: chartreuse;
+            background-color: brown;
+            text-overflow:clip;
+            overflow: auto;
+        }
+        
+        .box2{
+            border: 2px solid blue;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            margin: auto;
+            text-align: center;
+            color: chartreuse;
+            background-color: brown;
+        }
+
+        .container{
+            border: 2px solid blue;
+            width: 70vw;
+            height: 100vh;
+            box-sizing: border-box;
+            margin: auto;
+            text-align: center;
+            color: chartreuse;
+            background-color: brown;
+            font-size: 10px;
+            word-break: break-all;
+            text-align: left;
+        }
+
+        .container p{
+            font-size: 2em;
+        }
+
+        .container2{
+            border: 2px solid blue;
+            width: 70vw;
+            height: 100vh;
+            box-sizing: border-box;
+            margin: auto;
+            text-align: center;
+            color: chartreuse;
+            background-color: brown;
+            word-break: break-all;
+            text-align: left;
+        }
+
+        .container2 p{
+            font-size: 2rem;
+        }
+
+        .myscot{
+            background-color: blueviolet;
+            color: chartreuse;
+            width: 100vmin;
+            font-size: 22px;
+        }
+
+        .myscot2{
+            border: 2px solid blue;
+            box-sizing: border-box;
+            width: 70vw;
+            height: 100vh;
+            margin: auto;
+            color: chartreuse;
+            background-color: brown;
+            word-break: break-all;
+            text-align: left;
+            font-size: 20px;
+            width: 50%;
+        }
+
+        .myscot2 > div{
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .myscot2 > div > p{
+            border: 2px solid aqua;
+            width: 50%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--
+    CSS Sizing Units
+    1 px - Pixels
+    2 vw - viewport width
+    3 vh - viewport height
+    4 em
+    5 rem
+    6 vmax - computer - wedith - vw, phone - height - vh 
+    7 vmin - computer - height - vh, phone - wedith - vw
+    -->
+    <div class="box">
+        MY name is a hit patel <!--this vw sizing units only use in block elements-->
+    </div>
+    
+    <span class="box2"> <!--this vw sizing units not use in inline elements-->
+        MY name is a deep
+    </span>
+    <br>
+    <br>
+    <div class="container"> <!--em is inherit the font-size and multiple the font-size -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio inventore consectetur non unde? Id, adipisci sequi modi vero delectus, mollitia vitae deleniti placeat voluptatum error consectetur earum velit, unde nihil veniam repellat dignissimos quisquam accusamus rerum maxime consequuntur? Accusantium sint, eaque fugiat provident, adipisci, assumenda blanditiis eligendi officiis debitis vitae id. Iste repudiandae minus accusamus necessitatibus?
+        </p>
+    </div>
+    <br>
+    <div class="container2"> <!--rem is inherit and multiple the root elements like html font-size the font-size -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio inventore consectetur non unde? Id, adipisci sequi modi vero delectus, mollitia vitae deleniti placeat voluptatum error consectetur earum velit, unde nihil veniam repellat dignissimos quisquam accusamus rerum maxime consequuntur? Accusantium sint, eaque fugiat provident, adipisci, assumenda blanditiis eligendi officiis debitis vitae id. Iste repudiandae minus accusamus necessitatibus?
+        </p>
+    </div>
+    <br>
+    <div class="myscot"> <!--rem is inherit and multiple the root elements like html font-size the font-size -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio inventore consectetur non unde? Id, adipisci sequi modi vero delectus, mollitia vitae deleniti placeat voluptatum error consectetur earum velit, unde nihil veniam repellat dignissimos quisquam accusamus rerum maxime consequuntur? Accusantium sint, eaque fugiat provident, adipisci, assumenda blanditiis eligendi officiis debitis vitae id. Iste repudiandae minus accusamus necessitatibus?
+        </p>
+    </div>
+    <br>
+    <div class="myscot2"> <!--rem is inherit and multiple the root elements like html font-size the font-size -->
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio inventore consectetur non unde? Id, adipisci sequi modi vero delectus, mollitia vitae deleniti placeat voluptatum error consectetur earum velit, unde nihil veniam repellat dignissimos quisquam accusamus rerum maxime consequuntur? Accusantium sint, eaque fugiat provident, adipisci, assumenda blanditiis eligendi officiis debitis vitae id. Iste repudiandae minus accusamus necessitatibus?
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores quibusdam. Alias incidunt a quibusdam maiores aliquid, deleniti exercitationem nulla!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repellendus ex ducimus ullam accusamus laboriosam iure, excepturi nostrum amet fugit.</p>
+    </div>
+    </div>
+</body>
+</html>

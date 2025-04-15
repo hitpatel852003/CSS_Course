@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selecter</title>
+    <style>
+        /* element selector */
+        span {
+            color: darkgoldenrod;
+        }
+
+        /*class selector */
+        .red {
+            color: red;
+            background-color: burlywood;
+        }
+
+        /*id selector*/
+        #green {
+            color: green;
+            background-color: blueviolet;
+        }
+
+        /*child selector*/
+        div > p {
+            color: coral;
+            background-color: crimson;
+        }
+
+        /*Descendant Selector*/
+        div p {
+            color: orangered;
+            background-color: deeppink;
+        }
+
+        /*univers selector*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Pseudo Selector  */
+        a:visited{
+            color: chartreuse;
+        }
+
+        a:like{
+            color: darkmagenta;
+        }
+
+        a:hover{
+            color: lightseagreen;
+        }
+
+        a:active{
+            background-color: dimgray;
+        }
+
+        h1:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <span>
+        <h1>this is a hit</h1>
+    </span>
+
+    <div class="red">
+        this is a hit
+    </div>
+
+    <div id="green">
+        <h6>this is a hit</h6>
+    </div>
+
+    <div>
+        <p>this is a hit</p>
+    </div>
+
+    <div>
+        <article>
+            <p>this is a hit</p>
+        </article>
+    </div>
+
+    <a href="https://google.com">google</a>
+    <a href="https://facebook.com">facebook</a>
+
+    <main class="one">
+        <h1>this is a first</h1>
+        <h1>this is a second</h1>
+    </main>
+</body>
+
+</html>

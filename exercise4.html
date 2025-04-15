@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+
+            --color: rgb(16, 196, 241);
+            --seccolor: rgb(230, 82, 13);
+        }
+
+        .nav {
+            background-color: var(--seccolor);
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+
+        }
+
+
+        ul li:first-child {
+            --color: blue;
+            background-color: var(--color);
+            padding: 20px;
+            
+        }
+
+        .box2 {
+            --color: rgb(64, 245, 64);
+            background-color: var(--color);
+            padding: 20px;
+
+        }
+
+        .box3 {
+            --color: rgb(252, 175, 32);
+            background-color: var(--color);
+            padding: 20px;
+            
+        }
+
+        .box4 {
+            --color: rgb(252, 26, 176);
+            background-color: var(--color);
+            padding: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li class="box2">Blogs</li>
+            <li class="box3"> About us</li>
+            <li class="box4">Contact us</li>
+        </ul>
+    </div>
+</body>
+</html>

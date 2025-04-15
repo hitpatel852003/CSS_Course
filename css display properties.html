@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display properties</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* .box{ 
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            text-align: center;  
+        }*/
+
+        .box{
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .box1{
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    most usefull display properties
+    1 inline
+    2 inline-block
+    3 block
+    4 none
+    5 flex
+    6 inline-flex
+    7 grid
+    8 inline-grid    
+    -->
+
+    <div class="box box1">
+        MY name is a hit patel1
+    </div>
+    <div class="box">
+        My name is a deep patel2
+    </div>
+    <span class="box">my name is a hit3</span>
+</body>
+</html>

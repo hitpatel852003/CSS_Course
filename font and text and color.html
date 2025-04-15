@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font and text and color property</title>
+    <style>
+        /*css font properties*/
+        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jaro:opsz@6..72&display=swap');
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            font-weight: 500px;
+            font-style: oblique;
+            line-height: 10px;
+            letter-spacing: 10px;
+        }
+
+        h2 {
+            font-family: "Doto", sans-serif;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: smaller;
+            font-weight: 100;
+            font-style: oblique;
+            line-height: 4;
+            letter-spacing: 10px;
+        }
+
+        /*css text properties*/
+        h3 {
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: brown;
+            text-align: center;
+            text-indent: 50px;
+            text-decoration-thickness: 50px;
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        }
+
+        h5 {
+            text-transform: capitalize;
+            text-align: left;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-emphasis: none;
+            text-indent: 50px;
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+            text-decoration-thickness: 5px;
+        }
+
+        .Lorem {
+            border: 4px blue solid;
+            width: 45px;
+            text-overflow: clip;
+            overflow: scroll;
+            word-break: keep-all;
+        }
+
+        h6{
+            border: 2px solid red;
+            width: 40px;
+            text-overflow:clip ;
+            overflow: auto;
+            word-break: keep-all;
+        }
+
+        /*color properties*/
+        h4 {
+            /*color keyword*/
+            color: rgb(118, 34, 34);
+            /*color hax color code*/
+            color: #FF0000;
+            /*color rgb*/
+            color: rgb(red, green, blue);
+            /*color rgba*/
+            color: rgba(rgba(169, 71, 71, 0.66), rgb(85, 0, 128), rgba(0, 0, 255, 0.882), 0.5);
+            /*color hsl*/
+            color: hsl(hue, saturation, lightness)
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>my name is hit patel</h1>
+        <h2>my name is a hit patel</h2>
+        <p>my name is a hit patel</p>
+        <h3>my name is a hit patel</h3>
+        <h5>hy my name is a html </h5>
+        <p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloremque sunt ullam deserunt
+            molestias odit nisi fugit autem tempora consequatur.</p>
+        <h6 class="Lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloremque sunt ullam deserunt
+            molestias odit nisi fugit autem tempora consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloremque sunt ullam deserunt
+            molestias odit nisi fugit autem tempora consequatur.</h6>
+        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium enim necessitatibus ea laboriosam omnis
+            doloribus dicta possimus earum ab autem suscipit architecto odio unde officiis, excepturi quisquam, aliquam
+            tempore quaerat, et atque ad? Pariatur dolor suscipit quas laboriosam a molestias velit. Consequatur ea
+            nesciunt accusantium magnam, itaque expedita debitis dolorum.</h4>
+    </div>
+</body>
+
+</html>

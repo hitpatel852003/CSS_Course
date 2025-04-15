@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 5 - Design this Layout</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: brown;
+            overflow-y: scroll;
+            overflow-x: scroll;
+        }
+
+        nav{
+            position: sticky;
+            top: 0;
+        }
+
+        ul{
+            display: flex;
+            color: crimson;
+            background-color: chartreuse;
+            padding: 20px;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .box{
+            width: 470px;
+            border: 2px solid black;
+            color: brown;
+            background-color: chocolate;
+            overflow-y: auto;
+            overflow-x: auto;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .point{
+            border: 2px solid brown;
+            width: 20px;
+            height: 20px;
+            color: crimson;
+            background-color: chartreuse;
+            margin: 10px;
+            position: fixed;
+            bottom: 100px;
+        }
+
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards{
+            border: 2px solid green;
+            width: 700px;
+            height: 150px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: chartreuse;
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Conact</li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum porro unde fugit, nostrum repellat accusantium dolorum, debitis soluta nobis esse dolores praesentium sit, obcaecati dolorem sint ut cumque odit amet aut est adipisci! Distinctio nostrum optio aut deleniti totam, id dignissimos obcaecati architecto. Quibusdam atque explicabo quidem voluptatem, expedita modi, laudantium vitae, numquam ex reiciendis aliquam sunt id minima accusamus similique facere inventore natus optio? Omnis numquam eos alias enim praesentium! Exercitationem eum iure, incidunt quam commodi, corrupti distinctio accusamus vel itaque sunt fuga dignissimos similique neque blanditiis libero temporibus dolore debitis magnam! Quod aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur voluptatem molestiae ea itaque. Quasi dolorum ex laborum nulla in corrupti earum debitis hic magnam tempora voluptas excepturi dolor, quaerat sunt non maxime, sapiente accusantium odio! Eligendi modi eaque nisi amet provident harum, sint quis ullam magni error sapiente aspernatur perferendis, nostrum iure quisquam facilis consequatur voluptas id explicabo, similique reiciendis animi deleniti ipsa. Temporibus sint mollitia, in amet iusto et numquam facilis a magni, eligendi odio porro vel quod expedita eius molestiae ullam rem quidem! Doloremque nobis alias sit laboriosam reprehenderit illo fugiat, iure dolores placeat, distinctio tempora minima?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum porro unde fugit, nostrum repellat accusantium dolorum, debitis soluta nobis esse dolores praesentium sit, obcaecati dolorem sint ut cumque odit amet aut est adipisci! Distinctio nostrum optio aut deleniti totam, id dignissimos obcaecati architecto. Quibusdam atque explicabo quidem voluptatem, expedita modi, laudantium vitae, numquam ex reiciendis aliquam sunt id minima accusamus similique facere inventore natus optio? Omnis numquam eos alias enim praesentium! Exercitationem eum iure, incidunt quam commodi, corrupti distinctio accusamus vel itaque sunt fuga dignissimos similique neque blanditiis libero temporibus dolore debitis magnam! Quod aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur voluptatem molestiae ea itaque. Quasi dolorum ex laborum nulla in corrupti earum debitis hic magnam tempora voluptas excepturi dolor, quaerat sunt non maxime, sapiente accusantium odio! Eligendi modi eaque nisi amet provident harum, sint quis ullam magni error sapiente aspernatur perferendis, nostrum iure quisquam facilis consequatur voluptas id explicabo, similique reiciendis animi deleniti ipsa. Temporibus sint mollitia, in amet iusto et numquam facilis a magni, eligendi odio porro vel quod expedita eius molestiae ullam rem quidem! Doloremque nobis alias sit laboriosam reprehenderit illo fugiat, iure dolores placeat, distinctio tempora minima?</div>
+    </div>
+    <br>
+    <div class="card">
+        <div class="cards">
+            <h1>WELCOME TO INDIA</h1>
+        </div>
+    </div>
+    <br>
+    <div class="point">
+
+    </div>
+    <br>
+    <footer>
+        <ul>
+            <li>copy | right 2024-2025</li>
+        </ul>
+    </footer>
+</body>
+</html>

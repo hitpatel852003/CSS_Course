@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .continer{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            border: 2px solid black;
+            
+
+        }
+
+        img{
+            width: 400px;
+            height: 400px;
+            /* object-fit: contain; */
+            /* object-fit: cover; */
+            /* object-position: 10px 20px; */
+            /* object-position: bottom right; */
+            /* object-fit: fill; */
+        }
+
+        .continer1{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            background-image: url(1K3A2191.JPG);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-clip:padding-box;
+            background-size: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <img src="1K3A2191.JPG" alt="">
+    </div>
+    <br>
+    <div class="continer1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, neque? Fuga corporis at consequatur praesentium magnam repudiandae velit neque sequi iusto ea ad inventore, voluptates vitae dolorem ut dignissimos id!</p>
+    </div>
+</body>
+</html>

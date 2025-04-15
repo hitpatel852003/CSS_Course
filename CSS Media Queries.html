@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        @media screen and (max-width: 455px){
+            body{
+                background-color: rebeccapurple;
+                color: aqua;
+                text-align: center;
+            }
+
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            body{
+                border: 2px solid blue;
+            }    
+        }
+
+        @media screen and (min-width:455px) {
+            body{
+                border-radius: 20px;
+                margin: 100px;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+
+         /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        hy my name is hit patel
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

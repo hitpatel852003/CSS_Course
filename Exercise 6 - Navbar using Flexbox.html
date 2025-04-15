@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Navbar using Flexbox</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+       nav{
+        height: 70px;
+        display: flex;
+        border: 2px solid black;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       .left img{
+        width: 150px
+        
+       }
+
+       .right ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+       }
+
+       .right ul li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+       }
+
+       .right ul li a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">Home</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></li>
+                <li><a href="#">About</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></li>
+                <li><a href="#">Service</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></li>
+                <li><a href="#">Contact</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></li>
+                <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></div></li>
+              
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

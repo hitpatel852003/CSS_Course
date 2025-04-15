@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Exercise 7 - Design the Grid</title>
+    <style>
+        .boxes {
+            display: grid;
+            grid-template-columns: 350px 350px 350px;
+            grid-template-rows: 220px 220px 220px;
+            gap: 10px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .box {
+            border: 2px solid white;
+            width: 302px;
+            height: 210px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 16px;
+            overflow-wrap: break-word;
+        }
+
+        .box button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width: 945px) {
+            .boxes{
+                grid-template-columns: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <div class="boxes">
+            <div class="box">
+                <h4>English</h4>
+                <p>english</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>Deutsch</h4>
+                <p>German</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe">Download 64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>Italiano</h4>
+                <p>Italian</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>Español</h4>
+                <p>Spanish</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>français</h4>
+                <p>French</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe">Download 64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>Português brasileiro</h4>
+                <p>Brazilian Portuguese</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>日本</h4>
+                <p>Japanese</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>한국어</h4>
+                <p>Korean</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe">Download 64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>华语</h4>
+                <p>Chinese</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+            <div class="box">
+                <h4>華語</h4>
+                <p>Traditional Chinese</p>
+                <button type="button" class="btn btn-success"><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe">Download
+                        64-bit</a></button>
+                <p>SHA256</p>
+
+            </div>
+        </div>
+</body>
+
+</html>

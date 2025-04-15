@@ -1,0 +1,158 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cover {
+    border: 2px solid white;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav li {
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li img {
+    width: 25px;
+}
+
+.heder {
+    margin: 20px;
+}
+
+.heder ul {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.heder li {
+    list-style: none;
+}
+
+.heder p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+
+}
+
+.contant {
+    font-size: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    text-align: center;
+}
+
+.title ul{
+    list-style: none;
+    height: 100px;
+    display: flex;  
+    align-items: center;
+    gap: 10px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+
+.box{
+    border: 2px solid white;
+    width: 302px;
+    height: 210px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 16px;
+    overflow-wrap: break-word;
+}
+
+#font{
+    font-size: 8px;
+    
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-twitter {
+    color: black;
+  }
+
+  .fa-github {
+    color: black;
+  }
+
+  .fa-youtube {
+    color: black;
+  }
+
+  .fa-facebook {
+    color: black;
+  }
+
+  .fa-instagram {
+    color: black;
+  }
+
+  .fa-linkedin {
+    color: black;
+  }
+
+  .fa-reddit {
+    color: black;
+  }
+

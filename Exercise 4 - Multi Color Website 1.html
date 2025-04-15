@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4 - Multi Color Website</title>
+    <style>
+        :root{
+            --backgroundcolor:chocolate;
+            --firstcolor:chartreuse;
+            --firstbackgroundcolor:cadetblue;
+            --secondcolor:cadetblue;
+            --secondbackgroundcolor:chartreuse;
+            --padding: 10px;
+            --font-size:30px;
+            --font-family1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-family2: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav{
+            background-color: var(--backgroundcolor);
+        }
+         
+        ul{
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--padding);
+            font-size: var(--font-size);
+        }
+
+        .first{
+            color: var(--firstcolor);
+            background-color: var(--firstbackgroundcolor);
+            font-family: var(--font-family1);
+        }
+
+        .second{
+            color: var(--secondcolor);
+            background-color: var(--secondbackgroundcolor);
+            font-family: var(--font-family2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="first">Home</li>
+            <li class="second">About</li>
+            <li class="first">Services</li>
+            <li class="second">Conact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

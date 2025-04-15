@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 50vh;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: [f]120px [s]100px [t];  */
+            /* grid-template-rows: [f]100px [s]100px [t]100px; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(4, 40px);
+            gap: 30px;
+            /* justify-items: center; */
+            /* align-items: center; */
+            justify-content: center;
+            align-content: end;            
+            /* place-content: center; */
+        }
+
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px; 
+           
+        }
+
+        /* .item-1{ 
+            grid-row: f/s;
+            grid-column: f/s;
+        }*/
+
+        /* .item-2{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }*/
+
+        .containers{
+            border: 2px solid black;
+            display: grid;
+            width: 97vw;
+            height: 100vh;
+            /* grid-template-columns: [First]100px [Second]100px [Thried]100px; */
+            /* grid-template-rows: [First]100px [Second]100px [Thried]100px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            /* justify-items: center; */
+            /* align-items: center; */
+            justify-content: center;
+            align-content: center;
+        }        
+
+        .items{
+            border: 2px solid black;
+            height: 50px;
+            /* width: 50px; */
+        }
+
+        .items-1{
+            grid-row: First/Thried;
+            grid-column: First/Thried;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-1">2</div>
+        <div class="item ">3</div>
+        <div class="item item-2">4</div>
+        <div class="item item-2">5</div>
+    </div>
+    <br>
+    <div class="containers">
+        <div class="items items-1">N</div>
+        <div class="items items-1">S</div>
+        <div class="items ">A</div>
+        <div class="items items-2">C</div>
+        <div class="items items-2">d</div>
+    </div>
+</body>
+</html>
